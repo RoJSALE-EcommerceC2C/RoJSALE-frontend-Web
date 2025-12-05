@@ -1,0 +1,22 @@
+{
+  "placeholderImages": [
+    {
+      "id": "user-avatar-1",
+      "description": "User avatar placeholder",
+      "imageUrl": "https://picsum.photos/seed/avatar1/100/100",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "ad-image-1",
+      "description": "Advertisement placeholder image",
+      "imageUrl": "https://picsum.photos/seed/ad1/400/300",
+      "imageHint": "product marketing"
+    },
+    {
+      "id": "hero-dashboard",
+      "description": "Dashboard hero image",
+      "imageUrl": "https://picsum.photos/seed/dashboardHero/1200/400",
+      "imageHint": "abstract data"
+    }
+  ]
+}

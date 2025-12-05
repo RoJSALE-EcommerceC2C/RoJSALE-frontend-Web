@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 20% 98%;
+    --foreground: 220 40% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 40% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 40% 15%;
+
+    --primary: 226 70% 40%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 220 40% 15%; /* Navy Blue */
+
+    --muted: 240 5% 96%;
+    --muted-foreground: 220 40% 15%;
+
+    --accent: 54 90% 60%;
+    --accent-foreground: 220 40% 15%; /* Navy Blue */
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 98%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 86%;
+    --ring: 226 70% 40%;
+
+    --radius: 0.5rem;
+
+    --chart-1: 226 70% 40%; 
+    --chart-2: 54 90% 60%;
+    --chart-3: 190 70% 70%;
+    --chart-4: 220 50% 75%;
+    --chart-5: 54 80% 80%;
+    
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 226 70% 40%;
+    --sidebar-primary: 226 70% 40%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 54 100% 50%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 54 100% 50%;
+  }
+
+  .dark {
+    --background: 220 40% 15%; /* Navy Blue */
+    --foreground: 0 0% 98%;
+
+    --card: 220 40% 15%; /* Navy Blue */
+    --card-foreground: 0 0% 98%;
+
+    --popover: 220 40% 15%; /* Navy Blue */
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 226 70% 40%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 220 40% 20%; /* Darker Navy Blue */
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 220 40% 20%; /* Darker Navy Blue */
+    --muted-foreground: 0 0% 63.9%;
+
+    --accent: 54 90% 60%;
+    --accent-foreground: 220 40% 15%; /* Navy Blue */
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 98%;
+
+    --success: 142 70% 20%;
+    --success-foreground: 0 0% 98%;
+
+    --border: 220 40% 20%; /* Darker Navy Blue */
+    --input: 220 40% 20%; /* Darker Navy Blue */
+    --ring: 226 70% 40%;
+
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 226 70% 40%;
+    --sidebar-primary: 0 0% 98%;
+    --sidebar-primary-foreground: 220 40% 15%; /* Navy Blue */
+    --sidebar-accent: 54 100% 50%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 54 100% 50%;
+  }
+}
+.recharts-cartesian-axis-tick text {
+  fill: 226 70% 40% !important;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
