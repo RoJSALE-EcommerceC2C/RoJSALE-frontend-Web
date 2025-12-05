@@ -120,7 +120,7 @@ export function DashboardSidebar() {
                         <SidebarMenuButton
                           isActive={pathname.startsWith(link.href)}
                           tooltip={link.label}
-                          className="h-10 justify-start rounded-lg hover:bg-primary/10 data-[active=true]:bg-accent data-[active=true]:text-accent-foreground text-primary"
+                          className="h-10 justify-start rounded-lg hover:bg-primary/10 data-[active=true]:bg-accent data-[active=true]:text-primary text-primary"
                         >
                           <link.icon className="size-5" />
                           <span className="flex-1 text-left">{link.label}</span>
