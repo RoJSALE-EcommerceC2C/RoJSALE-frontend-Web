@@ -11,8 +11,8 @@ import {
 import type { IncomeData } from '@/lib/types';
 
 const data: IncomeData[] = [
-    { name: 'Package Sales', value: 4500, fill: 'hsl(var(--chart-2))' },
-    { name: 'Ad Revenue', value: 2500, fill: 'hsl(var(--chart-1))' },
+    { name: 'Package Sales', value: 4500, fill: 'hsl(var(--primary))' },
+    { name: 'Ad Revenue', value: 2500, fill: 'hsl(var(--accent))' },
   ];
 
 const Legend = ({ payload }: any) => {

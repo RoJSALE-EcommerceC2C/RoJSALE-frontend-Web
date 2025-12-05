@@ -23,7 +23,6 @@ export function StatCard({ title, value, progress, indicatorClassName }: StatCar
         {progress !== undefined && (
           <div className="flex items-center gap-2">
              <Progress value={progress} indicatorClassName={indicatorClassName}/>
-             <span className="text-xs text-primary">{progress}</span>
           </div>
         )}
       </CardContent>
