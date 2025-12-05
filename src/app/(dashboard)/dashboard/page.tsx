@@ -31,17 +31,16 @@ export default function DashboardPage() {
       <PageHeader title="DASHBOARD" />
 
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-        <StatCard title="Total Users" value="0" />
-        <StatCard title="Total Buyers" value="0" />
-        <StatCard title="Total Advertisement" value="0" />
-        <StatCard title="Active Packages" value="34" progress={75} />
+        <StatCard title="New User" value="+234" progress={58} />
+        <StatCard title="Total Expenses" value="71%" progress={62} indicatorClassName="bg-accent" />
+        <StatCard title="Advertisements" value="$1.45M" progress={81} />
+        <StatCard title="Package" value="+34" progress={62} indicatorClassName="bg-accent" />
       </div>
 
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
         <Card>
             <CardHeader>
                 <CardTitle className="text-base font-semibold text-primary">Traffic Sources</CardTitle>
-                <CardDescription className="text-primary">An overview of your website traffic.</CardDescription>
             </CardHeader>
             <CardContent>
                 <OverviewChart chartConfig={chartConfig}/>
@@ -50,7 +49,6 @@ export default function DashboardPage() {
         <Card>
             <CardHeader>
                 <CardTitle className="text-base font-semibold text-primary">Income</CardTitle>
-                <CardDescription className="text-primary">A breakdown of your income sources.</CardDescription>
             </CardHeader>
             <CardContent>
                 <IncomeChart chartConfig={chartConfig} />

@@ -1,3 +1,4 @@
+
 'use client';
 
 import { PageHeader } from '@/components/page-header';
@@ -52,7 +53,7 @@ const TicketCard = ({ ticket }: { ticket: Ticket }) => {
                 <Badge
                   variant="outline"
                   className={cn({
-                    'bg-accent text-primary border-accent': ticket.status === 'Open',
+                    'bg-accent text-accent-foreground': ticket.status === 'Open',
                     'bg-primary/10 text-primary border-primary/20': ticket.status === 'In Progress',
                     'bg-blue-100 text-blue-700 border-blue-200': ticket.status === 'Resolved',
                   })}
@@ -64,7 +65,7 @@ const TicketCard = ({ ticket }: { ticket: Ticket }) => {
                    variant="outline"
                    className={cn({
                      'bg-primary text-primary-foreground': ticket.priority === 'High',
-                     'bg-accent text-primary border-accent': ticket.priority === 'Medium',
+                     'bg-accent text-primary': ticket.priority === 'Medium',
                      'bg-blue-100 text-blue-700 border-blue-200': ticket.priority === 'Low',
                    })}
                  >
