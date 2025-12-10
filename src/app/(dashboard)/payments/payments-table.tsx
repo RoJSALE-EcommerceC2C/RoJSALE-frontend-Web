@@ -184,3 +184,4 @@ export function PaymentsTable({ data }: PaymentsTableProps) {
     </Card>
   );
 }
+export default PaymentsTable;
