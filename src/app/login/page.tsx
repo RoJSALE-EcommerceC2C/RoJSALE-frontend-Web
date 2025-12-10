@@ -53,7 +53,7 @@ export default function AdminLoginPage() {
     <div className="min-h-screen flex items-center justify-center bg-gray-50 p-4">
       <Card className="w-full max-w-md shadow-lg">
         <CardHeader>
-          <CardTitle className="text-center text-2xl font-bold">
+          <CardTitle className="text-center text-2xl font-bold text-primary">
             Admin Login
           </CardTitle>
         </CardHeader>
@@ -64,22 +64,24 @@ export default function AdminLoginPage() {
           )}
 
           <div>
-            <Label>Email</Label>
+            <Label className="text-primary">Email</Label>
             <Input
               type="email"
               placeholder="admin@example.com"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
+              className="text-primary placeholder:text-primary/60 caret-primary border-primary/40 focus:border-primary"
             />
           </div>
 
           <div>
-            <Label>Password</Label>
+            <Label className="text-primary">Password</Label>
             <Input
               type="password"
               placeholder="Your password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
+              className="text-primary placeholder:text-primary/60 caret-primary border-primary/40 focus:border-primary"
             />
           </div>
 
